@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--font-family-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="../../css/font-awesome.min.css">
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="../../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../css/owl.theme.default.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <title>Siwikode</title>
+</head>
+<body id="home">
+
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <div class="container">
+            <!-- logo -->
+            <a class="navbar-brand logo-image" href="index.html"><img src="../../img/SIWIKODE.png"></a>
+
+            <!-- toggle -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- nav item -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="../../index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#wisata-rekreasi">Wisata Rekreasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#wisata-kuliner">Wisata Kuliner</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#testimoni">Testimoni</a>
+                    </li>
+                    <li class="nav-item dropdown page-scoll">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Registrasi
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../rekreasi/tambahdata.html">Wisata Rekreasi</a>
+                            <a class="dropdown-item" href="../kuliner/tambahdata.html">Wisata Kuliner</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="../about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <li class="button">
+                            <button class="btn btn-solid-lg btn-login" data-toggle="modal" data-target="#exampleModal">Login</button>
+                        </li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- nav broadcrumb -->
+    <nav class="breadcrumb" aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Registrasi Wisata Kuliner</a></li>
+        </ol>
+    </nav>
+    <!-- end nav broadcrumb -->
+
+    <!-- modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Login Form</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                <form action="" method="POST" id="myform">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Username</label>
+                        <input type="text" class="form-control" id="username" placeholder="username" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="password" value="">
+                    </div>
+                </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="assets/akun/buatakun.html" class="buat-akun">Buat Akun</a>
+                    <button type="button" class="btn btn-solid-lg btn-login" id="login" onclick="login()">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end modal -->
+
+    <section class="tambah-data">
+        <div class="container">
+            <div class="gallary-header text-center">
+                <h2>Registrasi Wisata Kuliner</h2>
+            </div>
+
+            <div class="form-tambah-data">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form class="diri" id="diri" method="POST">
+                            <ul>
+                                <li>
+                                    <label for="nama">Nama Tempat Wisata</label>
+                                    <input type="text" name="nama" id="nama">
+                                </li>
+                                <li>
+                                    <label for="tanggalLahir">Tanggal Berdiri</label>
+                                    <input type="date" name="tanggalLahir" id="tanggalLahir">
+                                </li>
+                                <li>
+                                    <label for="jenis-wisata">Jenis Wisata</label>
+                                    <select name="penIbu" id="penIbu">
+                                        <option>Kedai Kopi</option>
+                                        <option>Makanan Seafood</option>
+                                        <option>Bakso / Mi Ayam</option>
+                                        <option>Sate</option>
+                                        <option>Ayam / Ikan Bakar</option>
+                                        <option>Gorengan</option>
+                                        <option>Lain - Lain</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <label for="alamat">Deskripsi Wisata</label>
+                                    <textarea name="alamat" id="alamat" cols="30" rows="2"></textarea>
+                                </li>
+                                <li>
+                                    <label for="alamat">Daftar Menu</label>
+                                    <textarea name="alamat" id="alamat" cols="30" rows="2"></textarea>
+                                </li>
+                                <li>
+                                    <label for="sekolah">Contact Person</label>
+                                    <input type="text" name="sekolah" id="sekolah">
+                                </li>
+                                <li>
+                                    <label for="tempatLahir">No Telepon / HP</label>
+                                    <input type="text" name="tempatLahir" id="tempatLahir">
+                                </li>
+                                <li>
+                                    <label for="agama">Email</label>
+                                    <input type="text" name="agama" id="agama">
+                                </li>
+                                <li>
+                                    <label for="alamat">Alamat Lengkap</label>
+                                    <textarea name="alamat" id="alamat" cols="30" rows="2"></textarea>
+                                </li>
+                                <li>
+                                    <label for="nik">Longitude Latitude</label>
+                                    <input type="text" name="nik" id="nik">
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="checkbox">
+                                    <p class="syarat">Dengan ini saya menyatakan bahwa data yang telah saya masukkan benar dan dapat dipertanggungjawabkan</p>
+                                </li>
+                                <li class="button">
+                                    <button class="btn btn-solid-lg btn-login" data-toggle="modal" data-target="#exampleModal">Save</button>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                    <div class="col-md-6">
+                        <h5 class="judul-sosmed">FOLLOW US ON SOCIAL MEDIA</h5>
+                        <div class="icon-sosmed">
+                            <a href="https://www.facebook.com/PersabBrebes/" target="_blank">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="https://twitter.com/PersabBrebes" target="_blank">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/persabbrebes/" target="_blank">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCwq9sjrpZ6jOQWem9BM0dLA" target="_blank">
+                                <i class="fa fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h5 class="judul-link">LINK</h5>
+                            <ul>
+                                <li class="list-link">
+                                    <a href="">Wisata Rekreasi</a>
+                                </li>
+                                <li class="list-link">
+                                    <a href="">Wisata Kuliner</a>
+                                </li>
+                                <li class="list-link">
+                                    <a href="">Testimoni</a>
+                                </li>
+                                <li class="list-link">
+                                    <a href="">Registrasi</a>
+                                </li>
+                            </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h5 class="judul-about">ABOUT</h5>
+                            <ul>
+                                <li class="list-about">
+                                    <a href="">Terms & Condition</a>
+                                </li>
+                                <li class="list-about">
+                                    <a href="">FAQ</a>
+                                </li>
+                                <li class="list-about">
+                                    <a href="">Customer Service</a>
+                                </li>
+                            </ul>
+                    </div>
+
+            </div>
+        
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <p>&copy; Kelompok 5 || Teknik Informatika 02 Pagi</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end copyright -->
+    
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/owl.carousel.min.js"></script>
+    <script src="../../js/script.js"></script>
+</body>
+</html>

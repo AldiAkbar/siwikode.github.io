@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.center .change-data {
+    color:  #00b300;
+    cursor: pointer;
+}
+
+.logo-image img {
+    width: 9rem;
+    height: 3.75rem;
+}
+
+.navbar-custom {
+    padding-top: 0.225rem;
+	padding-bottom: 0.225rem;
+	background-color: #565a5c;
+	font: 600 0.975rem/0.975rem "Montserrat", sans-serif;
+	transition: all 0.2s;
+}
+
+.navbar-custom .nav-item .nav-link {
+    color: white;
+}
+
+.navbar-custom .nav-item .nav-link:hover,
+.navbar-custom .nav-item-active .nav-link {
+	color: #00b300;
+}
+
+.navbar-custom .nav-item-active .nav-link:hover {
+    color: #00b300;
+}
+
+.nav-link {
+    margin-right: 25px;
+}
+
+.navbar-custom .nav-item .icon-login {
+    opacity: 0;
+}
+
+.navbar-custom .dropdown:hover > .dropdown-menu {
+	display: block;
+	min-width: auto;
+	animation: fadeDropdown 0.2s; 
+}
+
+@keyframes fadeDropdown {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.navbar-custom .dropdown-toggle:focus {
+	outline: 0;
+}
+
+.navbar-custom .dropdown-menu {
+	margin-top: 0;
+	border: none;
+	border-radius: 0.25rem;
+	background-color: #565a5c; 
+}
+
+.navbar-custom .dropdown-item {
+    font: 600 0.975rem/0.975rem "Montserrat", sans-serif;
+	color: #fff;
+	text-decoration: none;
+}
+
+.navbar-custom .dropdown-item:hover {
+    color: #00b300;
+	background-color: #565a5c;
+}
+
+.account:after {
+    content: none;
+}
+
+.btn-solid-lg {
+    margin-top: 30px;
+    display: inline-block;
+	border: 0.125rem solid #00b300;
+	border-radius: 0.25rem;
+	background-color: #00b300;
+	color: #fff;
+	font: 600 0.95rem/0 "Montserrat", sans-serif;
+	text-decoration: none;
+    transition: all 0.2s;
+}
+
+.btn-solid-lg:hover {
+	background-color: transparent;
+	color: #00b300;
+	text-decoration: none;
+}
+
+.btn-login {
+	padding: 0.975rem 1.625rem 0.975rem 1.625rem;
+}
+
+.breadcrumb {
+    background-color: #f9f9f9;
+    float: right;
+    width: max-content;
+    height: 40px;
+    margin-top: 40px;
+}
+
+.wisata-rekreasi,
+.wisata-kuliner,
+.testimoni  {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background-color: #f9f9f9;
+}
+
+.wisata-rekreasi .data,
+.wisata-kuliner .data,
+.testimoni .data {
+    width: 100%;
+    height: 350px;
+}
+
+.wisata-rekreasi .data th,
+.wisata-rekreasi .data td,
+.wisata-kuliner .data th,
+.wisata-kuliner .data td,
+.testimoni .data th,
+.testimoni .data td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.wisata-rekreasi .data a,
+.wisata-kuliner .data a,
+.testimoni .data a {
+    color: #00b300;
+}
+
+.footer {
+    margin-top: 50px;
+    height: 400px;
+    color: #ffffff;
+    background-color:  #565a5c;
+}
+
+.footer .container .row .judul-sosmed,
+.footer .container .row .judul-link,
+.footer .container .row .judul-about {
+    font-weight: bold;
+}
+
+.footer .container .row {
+    padding-top: 20px;
+}
+
+.footer .container .row .judul-sosmed {
+    font-size: 18px;
+}
+
+.footer .container .row .judul-link,
+.footer .container .row .judul-about {
+    margin-top: 20px;
+}
+
+.footer .container .row .icon-sosmed .fa {
+    font-size: 1.75rem;
+    color: #ffffff;
+    margin-left: 30px;
+}
+
+.footer .container .row .list-link, 
+.footer .container .row .list-about {
+    list-style: none;
+}
+
+.footer .container .row .list-link a, 
+.footer .container .row .list-about a {
+    color: white;
+}
+
+.copyright {
+    color: white;
+    background-color: #565a5c;
+}
+
+@media screen and (max-width: 992px) {
+    .breadcrumb {
+        display: none;
+    }
+}
